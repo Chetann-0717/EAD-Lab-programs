@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+    <style>
+        .container {
+            display: flex;              /* Enable Flexbox */
+            justify-content: center;    /* Center boxes horizontally */
+            align-items: center;        /* Center boxes vertically */
+            gap: 20px;                  /* Space between boxes */
+            height: 100vh;              /* Full screen height */
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;    /* Center text horizontally */
+            align-items: center;        /* Center text vertically */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+</body>
+</html>

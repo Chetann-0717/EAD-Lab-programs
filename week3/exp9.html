@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive Layout Exercise</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+            /* Default: Mobile -> Column layout */
+            flex-direction: column;
+        }
+
+        .box {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Media Query: Desktop -> Row layout */
+        /* Applies when screen width is 768px or larger */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .box {
+                flex: 1; /* Ensures boxes are equal width in a row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Responsive Design Exercise</h2>
+
+    <div class="container">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+    </div>
+
+</body>
+</html>

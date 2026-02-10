@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+
+    <style>
+        /* Style the whole page */
+        body {
+            height: 100vh;                     /* Full screen height */
+            display: flex;                     /* Use Flexbox */
+            justify-content: center;           /* Center horizontally */
+            align-items: center;               /* Center vertically */
+            background-color: #f2f2f2;         /* Light background */
+            font-family: Arial, sans-serif;    /* Font style */
+        }
+
+        /* Login form container */
+        .login-box {
+            background-color: white;           /* White background */
+            padding: 20px;                     /* Space inside box */
+            border: 2px solid #ccc;            /* Border around form */
+            width: 300px;                      /* Fixed width */
+        }
+
+        /* Heading style */
+        .login-box h2 {
+            text-align: center;                /* Center heading */
+        }
+
+        /* Input fields (username & password) */
+        .login-box input {
+            width: 100%;                       /* Full width */
+            padding: 10px;                     /* Inner space */
+            margin: 10px 0;                    /* Space between inputs */
+            border: 1px solid #999;            /* Border for inputs */
+        }
+
+        /* Login button style */
+        .login-box button {
+            width: 100%;                       /* Full width */
+            padding: 10px;                     /* Inner space */
+            background-color: #4CAF50;         /* Green color */
+            color: white;                      /* Text color */
+            border: none;                      /* Remove border */
+            cursor: pointer;                   /* Hand cursor on hover */
+        }
+
+        /* Button hover effect */
+        .login-box button:hover {
+            background-color: #45a049;         /* Darker green on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Login form box -->
+    <div class="login-box">
+
+        <!-- Form heading -->
+        <h2>Login</h2>
+
+        <!-- Username input -->
+        <input type="text" placeholder="Username">
+
+        <!-- Password input -->
+        <input type="password" placeholder="Password">
+
+        <!-- Login button -->
+        <button>Login</button>
+
+    </div>
+
+</body>
+</html>

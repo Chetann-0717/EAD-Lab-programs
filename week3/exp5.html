@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            color: white;
+        }
+
+        /* Static Position */
+        .static-box {
+            position: static;
+            background-color: gray;
+        }
+
+        /* Relative Position */
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: blue;
+        }
+
+        /* Absolute Position */
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 250px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box static-box">Static</div>
+    <div class="box relative-box">Relative</div>
+    <div class="box absolute-box">Absolute</div>
+
+</body>
+</html>

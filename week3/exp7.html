@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Simple Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            height: 60px;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        /* Middle section */
+        .content {
+            flex: 1;
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            height: 50px;
+            background-color: #34495e;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>My Website</h2>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h3>Menu</h3>
+            <p>Home</p>
+            <p>About</p>
+            <p>Services</p>
+            <p>Contact</p>
+        </div>
+
+        <div class="main">
+            <h2>Welcome!</h2>
+            <p>
+                This is the main content area where articles,
+                blog posts, or important information will appear.
+            </p>
+            <p>
+                Flexbox helps arrange the sidebar and content neatly.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 My Website
+    </div>
+
+</body>
+</html>
