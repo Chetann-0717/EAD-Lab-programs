@@ -1,14 +1,40 @@
-const fs = require('fs');
-fs.writeFileSync('data.txt', 'Name: Siri\n RollNo: 091\n Branch: IT\n');
-console.log("File Created and Data Written");
+const fs = require("fs");
+const FILE_NAME = "data.txt";
 
-const data = fs.readFileSync('data.txt', 'utf-8');
-console.log(data);
+// Student details to write
+const studentDetails = `Name: Chetann Reddy 
+Roll No: 102
+Branch: Information Technology
+Year: 2nd
+Email: chetann@gmail.com`;
 
-fs.appendFile('data.txt', 'College: CBIT\n', (err) => {
+// 1. Create and write student details to data.txt
+fs.writeFile(FILE_NAME, studentDetails, (err) => {
+  if (err) throw err;
+  console.log("1. File created and student details written successfully.\n");
+
+  // 2. Read and display file content
+  fs.readFile(FILE_NAME, "utf8", (err, data) => {
     if (err) throw err;
-    console.log("Data Appended Successfully!");
-
-    const data = fs.readFileSync('data.txt', 'utf-8');
+    console.log("2. Reading file content:");
+    console.log("---");
     console.log(data);
-})
+    console.log("---\n");
+
+    // 3. Append new data asynchronously
+    const newData = "\nPhone: 9876543210\nAddress: 123 Main Street";
+    fs.appendFile(FILE_NAME, newData, (err) => {
+      if (err) throw err;
+      console.log("3. New data appended successfully.\n");
+
+      // 4. Read again to show updated content
+      fs.readFile(FILE_NAME, "utf8", (err, updatedData) => {
+        if (err) throw err;
+        console.log("4. Updated file content:");
+        console.log("---");
+        console.log(updatedData);
+        console.log("---");
+      });
+    });
+  });
+});
